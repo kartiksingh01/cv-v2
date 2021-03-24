@@ -7,16 +7,18 @@
 font-family: 'Montserrat', sans-serif; */
 /* 393232 */
 
+
 body {
   background-color: #252525;
   font-family: "Montserrat", sans-serif;
   color: #f8f5f1;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .body-h{
   text-align: center;
   padding-bottom: 5%;
+  margin-top: 10%;
 }
 .home-row div {
   align-self: center;
@@ -170,7 +172,7 @@ tr{
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
+  animation: progress 2s ease-out forwards;
 }
 
 @keyframes progress {
@@ -209,4 +211,7 @@ tr{
 }
 .disabled{
   display: none;
+}
+.enabled{
+  display: block;
 }

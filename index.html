@@ -38,19 +38,25 @@
       src="https://kit.fontawesome.com/bdae92fa24.js"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+
+
+
     <!-- Navbar -->
 
     <!-- Home Section -->
     <section class="" id="home">
       <div class="container-fluid">
         <div class="row home-row">
-          <div class="col-md-3"><h1>Hello!</h1></div>
+          <div data-aos="fade-up" data-aos-duration="1000" class="col-md-3"><h1>Hello!</h1></div>
           <div class="col-md-6">
-            <div class="image-card">
+            <div data-aos="fade-up" data-aos-duration="2000" class="image-card">
               <img src="./assets/image.png" alt="" srcset="" /><br />
               <a
                 href="./assets/resume.pdf"
@@ -59,17 +65,17 @@
                 ><button type="button" class="resume-btn">RESUME</button></a>
             </div>
           </div>
-          <div class="col-md-3"><h3>Welcome to my space</h3></div>
+          <div data-aos="fade-up" data-aos-duration="1200" class="col-md-3"><h3>Welcome to my space</h3></div>
         </div>
       </div>
     </section>
     <section class="" id="about">
       <div class="container-fluid">
         <div class="row description">
-          <div class="col-md-4">
+          <div data-aos="fade-right" data-aos-duration="1500" class="col-md-4">
             <h2><u>ABOUT ME</u></h2>
           </div>
-          <div class="col-md-8">
+          <div data-aos="fade-left" data-aos-duration="2000" class="col-md-8">
             <p>
               A highly enthusiastic and passionate college student who aspires
               to build and advance his career in Biotechnology and Web
@@ -90,13 +96,13 @@
     <section id="majors">
       <div class="container-fluid">
         <div class="row">
-          <h1 class="body-h">What I Do?</h1>
-          <div class="col-md-6 my-skills">
+          <h1 data-aos="fade-up" data-aos-duration="1000" class="body-h">What I Do?</h1>
+          <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6 my-skills">
             <img src="./assets/dna.png" alt="" srcset="" />
             <br />
             <h6>Biotechnology</h6>
           </div>
-          <div class="col-md-6 my-skills">
+          <div data-aos="fade-left" data-aos-duration="2000" class="col-md-6 my-skills">
             <img src="./assets/brackets.png" alt="" srcset="" />
             <br />
             <h6>Web Development</h6>
@@ -105,7 +111,7 @@
       </div>
     </section>
     <!-- Projects Section -->
-    <section id="projects">
+    <section data-aos="fade-up" data-aos-duration="2000" id="projects">
       <h1 class="body-h">Internships and Projects</h1>
       <div class="container-fluid">
         <div class="row">
@@ -159,11 +165,11 @@
       </div>
     </section>
     <!-- Skills Section -->
-    <section id="skills">
+    <section data-aos="fade-up" data-aos-duration="2000" id="skills">
       <div class="container-fluid">
         <div class="row">
           <h1 class="body-h">Skills</h1>
-          <div class="col-md-4">
+          <div data-aos="zoom-in" data-aos-duration="2500" class="col-md-4">
             <div class="single-chart">
               <svg viewBox="0 0 36 36" class="circular-chart first">
                 <path
@@ -172,8 +178,8 @@
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
-                <path
-                  class="circle"
+                <path id="circle-1"
+                  class=""
                   stroke-dasharray="85, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -185,7 +191,7 @@
             <br />
             <h4 class="body-h">HTML</h4>
           </div>
-          <div class="col-md-4">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="col-md-4">
             <div class="single-chart">
               <svg viewBox="0 0 36 36" class="circular-chart second">
                 <path
@@ -195,7 +201,7 @@
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path
-                  class="circle"
+                id="circle-2" class=""
                   stroke-dasharray="70, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -207,7 +213,7 @@
             <br />
             <h4 class="body-h">CSS</h4>
           </div>
-          <div class="col-md-4">
+          <div data-aos="zoom-in" data-aos-duration="3200" class="col-md-4">
             <div class="single-chart">
               <svg viewBox="0 0 36 36" class="circular-chart third">
                 <path
@@ -217,7 +223,7 @@
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path
-                  class="circle"
+                id="circle-3" class=""
                   stroke-dasharray="60, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -233,11 +239,11 @@
       </div>
     </section>
     <!-- Languages Section -->
-    <section id="language">
+    <section data-aos="fade-up" data-aos-duration="2000" id="language">
       <div class="container-fluid">
         <div class="row">
           <h1 class="body-h">Languages</h1>
-          <div class="col-md-4">
+          <div data-aos="zoom-in" data-aos-duration="2500" class="col-md-4">
             <div class="single-chart">
               <svg viewBox="0 0 36 36" class="circular-chart fourth">
                 <path
@@ -247,7 +253,7 @@
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path
-                  class="circle"
+                id="circle-4" class=""
                   stroke-dasharray="90, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -259,7 +265,7 @@
             <br />
             <h4 class="body-h">English</h4>
           </div>
-          <div class="col-md-4">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="col-md-4">
             <div class="single-chart">
               <svg viewBox="0 0 36 36" class="circular-chart fifth">
                 <path
@@ -269,7 +275,7 @@
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path
-                  class="circle"
+                id="circle-5" class=""
                   stroke-dasharray="100, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -281,7 +287,7 @@
             <br />
             <h4 class="body-h">हिन्दी</h4>
           </div>
-          <div class="col-md-4">
+          <div data-aos="zoom-in" data-aos-duration="3200" class="col-md-4">
             <div class="single-chart">
               <svg viewBox="0 0 36 36" class="circular-chart sixth">
                 <path
@@ -291,7 +297,7 @@
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
                 <path
-                  class="circle"
+                id="circle-6" class=""
                   stroke-dasharray="30, 100"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
