@@ -6,8 +6,36 @@
 /* font-family: 'Brygada 1918', serif;
 font-family: 'Montserrat', sans-serif; */
 /* 393232 */
-
-
+/* Navbar */
+.nav-bar ul a{
+  text-decoration: none;
+  color: #f8f5f1;
+}
+.logo{
+  height: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.logo h4{
+  margin-top: 1%;
+}
+.nav-bar, .nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 2%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: large;
+}
+.nav-bar{
+  height: 8vh;
+}
 body {
   background-color: #252525;
   font-family: "Montserrat", sans-serif;
@@ -129,6 +157,13 @@ tr{
   .description div p {
     padding: 2% 6%;
   }
+  .nav-bar ul{
+    font-weight: normal;
+    font-size: unset;
+  }
+  .logo{
+    margin: 4% auto;
+  }
 }
 @media screen and (min-width: 768px){
   .social-icons a i:hover{
@@ -145,6 +180,10 @@ tr{
     color: #f8f5f1;
     font-size: 26px;
     transition: all ease-in-out 0.2s;
+  }
+  .nav-bar ul a li:hover{
+    transform: scale(1.2);
+    transition: all ease-in .3s;
   }
 }
 
