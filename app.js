@@ -1,14 +1,17 @@
 $(document).ready(()=>{
     AOS.init();
     $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
-      // console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
+      var aboutElement = document.getElementById("navbar-sticky");
+      var aboutElementHeight = aboutElement.clientHeight;
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+      var scrollPosition = scrollY + windowHeight;
+      var aboutPosition = aboutElement.getBoundingClientRect().top + scrollY + aboutElementHeight;
+
+    if ($(window).scrollTop() > aboutPosition) {
       $('#nav_bar').addClass('navbar-fixed');
     }
-    if ($(window).scrollTop() < 281) {
+    if ($(window).scrollTop() < aboutPosition) {
       $('#nav_bar').removeClass('navbar-fixed');
     }
   });
