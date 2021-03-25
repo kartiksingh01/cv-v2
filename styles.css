@@ -19,6 +19,14 @@ font-family: 'Montserrat', sans-serif; */
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: #252525;
+}
+
 .logo h4{
   margin-top: 1%;
 }
@@ -34,7 +42,7 @@ font-family: 'Montserrat', sans-serif; */
   font-size: large;
 }
 .nav-bar{
-  height: 8vh;
+  height:max-content;
 }
 body {
   background-color: #252525;
